@@ -14,7 +14,7 @@ def get_local_node_info():
 
 
 def generate_payload():
-    """ Return payload with local node information in JSON """
+    """ Return payload with local node information as python object """
     return {
         'hostname': str(get_local_hostname()),
         'ip_address': str(get_local_ip_addresses()),
